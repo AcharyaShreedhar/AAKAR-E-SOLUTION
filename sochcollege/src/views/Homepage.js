@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Dashboard from "../Components";
 
 class Homepage extends Component {
   constructor(props) {
@@ -9,7 +10,13 @@ class Homepage extends Component {
   }
 
   render() {
-    return <div>Welcome to Soch College</div>;
+    return (
+      <div id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+          <Dashboard />
+        </div>
+      </div>
+    );
   }
 }
-export default Homepage
+export default Homepage;
