@@ -1,3 +1,4 @@
-import Dashboard from './Dashboard'
+import Dashboard from "./Dashboard";
+import AboutUs from "./AboutUs";
 
-export default   Dashboard 
+export { Dashboard, AboutUs };

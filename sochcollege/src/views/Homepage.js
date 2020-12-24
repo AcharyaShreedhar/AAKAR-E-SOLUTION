@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Dashboard from "../Components";
+import { Dashboard, AboutUs } from "../Components";
 import "./HomePage.css";
 
 class Homepage extends Component {
@@ -34,6 +34,7 @@ class Homepage extends Component {
             </a>
           </div>
         </section>
+        <AboutUs />
       </div>
     );
   }
