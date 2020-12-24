@@ -12,32 +12,29 @@ class Homepage extends Component {
 
   render() {
     return (
-      <body>
-        <div className="header fixed-top">
-          <Dashboard />
-
-          <section
-            id="hero"
-            className="d-flex justify-content-center align-items-center"
+      <div>
+        <Dashboard />
+        <section
+          id="hero"
+          className="hero d-flex justify-content-center align-items-center"
+        >
+          <div
+            className="container position-relative"
+            data-aos="zoom-in"
+            data-aos-delay="100"
           >
-            <div
-              className="container position-relative"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <h1>
-                Learning Today,
-                <brb />
-                Leading Tomorrow
-              </h1>
-              <h2>We are team of professionals in IT Industry.</h2>
-              <a href="#" className="btn-get-started">
-                Get Started
-              </a>
-            </div>
-          </section>
-        </div>
-      </body>
+            <h1>
+              Learning Today,
+              <brb />
+              Leading Tomorrow
+            </h1>
+            <h2>We are team of professionals in IT Industry.</h2>
+            <a href="#" className="btn-get-started">
+              Get Started
+            </a>
+          </div>
+        </section>
+      </div>
     );
   }
 }
