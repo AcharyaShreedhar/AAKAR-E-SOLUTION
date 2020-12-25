@@ -1,11 +1,21 @@
-.card{
+.card {
   background-color: lavender;
   padding-top: 10px;
 }
-.slideritem{
+.slideritem {
   display: flex;
   flex-direction: column;
   font-style: italic;
   padding: 20px;
   align-items: center;
 }
+
+
+
+  .message {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  }
