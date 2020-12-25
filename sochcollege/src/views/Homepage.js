@@ -34,7 +34,9 @@ class Homepage extends Component {
             </a>
           </div>
         </section>
-        <AboutUs />
+        <div className=" card d-flex px-2 rounded">
+          <AboutUs />
+        </div>
       </div>
     );
   }
