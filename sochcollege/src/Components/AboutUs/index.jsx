@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Carousel, Card, Button } from "react-bootstrap";
+import CountUp from "react-countup";
 import principal from "../../images/Principal.png";
 import "./AboutUs.scss";
 
@@ -113,6 +114,28 @@ class AboutUs extends Component {
             <Card style={{ width: "18rem" }} className="w-50">
               <Card.Img variant="top" src={principal} />
             </Card>
+          </div>
+        </div>
+        <div className="d-flex counts">
+          <div class="container">
+            <div class="row counters">
+              <div class="col-lg-3 col-6 text-center">
+                <CountUp end={1232} />
+                <p>Students</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                <CountUp end={7} />
+                <p>Courses</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                <CountUp end={55} />
+                <p>Events</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                <CountUp end={40} />
+                <p>Trainers</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
