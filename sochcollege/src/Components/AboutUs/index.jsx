@@ -336,6 +336,37 @@ class AboutUs extends Component {
                       indoor games like chess in their leisure.
                     </p>
                   </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
                 </div>
               </AccordionItem>
               <AccordionItem>
@@ -350,6 +381,46 @@ class AboutUs extends Component {
                       prepared snacks and meals in affordable price range for
                       students.
                     </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
                   </AccordionItemPanel>
                 </div>
               </AccordionItem>
