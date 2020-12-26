@@ -327,26 +327,31 @@ class AboutUs extends Component {
                 <AccordionItemHeading>
                   <AccordionItemButton>Sports</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>
-                    Students at SOCH have access to outdoor sports like table
-                    tennis, cricket and five-a-side football pitch located
-                    inside the college premises. Moreover students can play
-                    indoor games like chess in their leisure.
-                  </p>
-                </AccordionItemPanel>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      Students at SOCH have access to outdoor sports like table
+                      tennis, cricket and five-a-side football pitch located
+                      inside the college premises. Moreover students can play
+                      indoor games like chess in their leisure.
+                    </p>
+                  </AccordionItemPanel>
+                </div>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton>Canteen</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>
-                    The canteen situated at the top of the college building with
-                    panoramic view of Annapurna range provides freshly prepared
-                    snacks and meals in affordable price range for students.
-                  </p>
-                </AccordionItemPanel>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The canteen situated at the top of the college building
+                      with panoramic view of Annapurna range provides freshly
+                      prepared snacks and meals in affordable price range for
+                      students.
+                    </p>
+                  </AccordionItemPanel>
+                </div>
               </AccordionItem>
             </Accordion>
           </div>
