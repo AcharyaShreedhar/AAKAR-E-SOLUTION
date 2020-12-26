@@ -146,6 +146,17 @@ class AboutUs extends Component {
             </div>
           </div>
         </div>
+        <div className="d-flex card">
+          <div className="d-flex p-3 bg-secondary">
+            <strong>College's Infrastructure</strong>
+          </div>
+          <p className="text-left p-2">
+            The college has its own property spread over 2 ropanies of land and
+            newly constructed building (Area 15000 Square Feet) with modern
+            amenities with an added attraction of peaceful environment and
+            greenery.
+          </p>
+        </div>
       </div>
     );
   }
