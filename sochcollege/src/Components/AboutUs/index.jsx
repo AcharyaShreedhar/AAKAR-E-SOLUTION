@@ -171,6 +171,46 @@ class AboutUs extends Component {
                     connectivity, we have a dedicated optical fiber link.
                   </p>
                 </AccordionItemPanel>
+                <AccordionItemPanel>
+                  <Carousel className="pt-2 border border-light rounded">
+                    <Carousel.Item interval={1000}>
+                      <div className="slideritem">
+                        <Image
+                          style={{ width: "18rem" }}
+                          src={"/images/computerlab1.jpg"}
+                          alt=""
+                        />
+                      </div>
+                    </Carousel.Item>
+                    <Carousel.Item interval={500}>
+                      <div className="slideritem">
+                        <Image
+                          style={{ width: "18rem" }}
+                          src={"/images/computerlab2.jpg"}
+                          alt=""
+                        />
+                      </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="slideritem">
+                        <Image
+                          style={{ width: "18rem" }}
+                          src={"/images/computerlab3.jpg"}
+                          alt=""
+                        />
+                      </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="slideritem">
+                        <Image
+                          style={{ width: "18rem" }}
+                          src={"/images/computerlab4.jpg"}
+                          alt=""
+                        />
+                      </div>
+                    </Carousel.Item>
+                  </Carousel>
+                </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
