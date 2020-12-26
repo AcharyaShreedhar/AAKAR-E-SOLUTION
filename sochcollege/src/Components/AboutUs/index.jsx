@@ -162,7 +162,7 @@ class AboutUs extends Component {
                 <AccordionItemHeading>
                   <AccordionItemButton>Computer Lab</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className="w-50">
                   <p>
                     The computer lab at SOCH has 48 PCs, one internet/file
                     server and other switching/networking devices. Each PC is
@@ -171,7 +171,7 @@ class AboutUs extends Component {
                     connectivity, we have a dedicated optical fiber link.
                   </p>
                 </AccordionItemPanel>
-                <AccordionItemPanel>
+                <AccordionItemPanel className="w-50">
                   <Carousel className="pt-2 border border-light rounded">
                     <Carousel.Item interval={1000}>
                       <div className="slideritem">
