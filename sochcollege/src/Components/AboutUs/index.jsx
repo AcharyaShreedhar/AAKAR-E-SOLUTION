@@ -210,6 +210,18 @@ class AboutUs extends Component {
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Canteen</AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>
+                    The canteen situated at the top of the college building with
+                    panoramic view of Annapurna range provides freshly prepared
+                    snacks and meals in affordable price range for students.
+                  </p>
+                </AccordionItemPanel>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
