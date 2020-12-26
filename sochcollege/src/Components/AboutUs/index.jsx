@@ -157,7 +157,7 @@ class AboutUs extends Component {
             greenery.
           </p>
           <div className="infrastructure backImg">
-            <Accordion allowZeroExpanded>
+            <Accordion allowZeroExpanded className="w-100">
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton>Computer Lab</AccordionItemButton>
@@ -169,6 +169,17 @@ class AboutUs extends Component {
                     configured with software and tools required for various
                     practical sessions. For a smooth and fast internet
                     connectivity, we have a dedicated optical fiber link.
+                  </p>
+                </AccordionItemPanel>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Digital Lab</AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>
+                    The digital lab at SOCH has sufficient sets of Digital logic
+                    trainer kit and DYNA-85 Microprocessor kit each.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
