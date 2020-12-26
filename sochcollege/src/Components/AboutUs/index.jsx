@@ -65,7 +65,7 @@ class AboutUs extends Component {
           <div className="d-flex flex-row  pb-2">
             <Card className="w-50">
               <Card.Body>
-                <blockquote className="blockquote mb-0 message">
+                <blockquote className="blockquote mb-0 message p-5">
                   <p>
                     As principal of this college, I am pleased to welcome
                     prospective student, current student, lecturer, visitor,
