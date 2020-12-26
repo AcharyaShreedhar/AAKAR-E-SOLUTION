@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel, Card, Button } from "react-bootstrap";
+import { Carousel, Card } from "react-bootstrap";
 import {
   Accordion,
   AccordionItem,
