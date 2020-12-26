@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import { Carousel, Card, Button } from "react-bootstrap";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 import CountUp from "react-countup";
 import principal from "../../images/Principal.png";
 import "./AboutUs.scss";
