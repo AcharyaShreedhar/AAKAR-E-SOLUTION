@@ -162,55 +162,57 @@ class AboutUs extends Component {
                 <AccordionItemHeading>
                   <AccordionItemButton>Computer Lab</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel className="w-50">
-                  <p>
-                    The computer lab at SOCH has 48 PCs, one internet/file
-                    server and other switching/networking devices. Each PC is
-                    configured with software and tools required for various
-                    practical sessions. For a smooth and fast internet
-                    connectivity, we have a dedicated optical fiber link.
-                  </p>
-                </AccordionItemPanel>
-                <AccordionItemPanel className="w-50">
-                  <Carousel className="pt-2 border border-light rounded">
-                    <Carousel.Item interval={1000}>
-                      <div className="slideritem">
-                        <Image
-                          style={{ width: "18rem" }}
-                          src={"/images/computerlab1.jpg"}
-                          alt=""
-                        />
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item interval={500}>
-                      <div className="slideritem">
-                        <Image
-                          style={{ width: "18rem" }}
-                          src={"/images/computerlab2.jpg"}
-                          alt=""
-                        />
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div className="slideritem">
-                        <Image
-                          style={{ width: "18rem" }}
-                          src={"/images/computerlab3.jpg"}
-                          alt=""
-                        />
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div className="slideritem">
-                        <Image
-                          style={{ width: "18rem" }}
-                          src={"/images/computerlab4.jpg"}
-                          alt=""
-                        />
-                      </div>
-                    </Carousel.Item>
-                  </Carousel>
-                </AccordionItemPanel>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50">
+                    <p>
+                      The computer lab at SOCH has 48 PCs, one internet/file
+                      server and other switching/networking devices. Each PC is
+                      configured with software and tools required for various
+                      practical sessions. For a smooth and fast internet
+                      connectivity, we have a dedicated optical fiber link.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
