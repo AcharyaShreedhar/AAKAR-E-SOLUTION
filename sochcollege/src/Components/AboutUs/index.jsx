@@ -183,6 +183,20 @@ class AboutUs extends Component {
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Library</AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>
+                    The college has an extensive library containing more than
+                    1000 volumes of various subject books, encyclopedias,
+                    biographies, dictionaries and old projects. Furthermore our
+                    library contains subscribed newspapers, magazines - both
+                    national and international - and journals.
+                  </p>
+                </AccordionItemPanel>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
