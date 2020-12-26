@@ -197,6 +197,19 @@ class AboutUs extends Component {
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Sports</AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>
+                    Students at SOCH have access to outdoor sports like table
+                    tennis, cricket and five-a-side football pitch located
+                    inside the college premises. Moreover students can play
+                    indoor games like chess in their leisure.
+                  </p>
+                </AccordionItemPanel>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
