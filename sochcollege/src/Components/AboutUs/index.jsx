@@ -9,6 +9,7 @@ import {
 } from "react-accessible-accordion";
 import CountUp from "react-countup";
 import principal from "../../images/Principal.png";
+import "react-accessible-accordion/dist/fancy-example.css";
 import "./AboutUs.scss";
 
 class AboutUs extends Component {
