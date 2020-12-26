@@ -156,6 +156,24 @@ class AboutUs extends Component {
             amenities with an added attraction of peaceful environment and
             greenery.
           </p>
+          <div className="infrastructure backImg">
+            <Accordion allowZeroExpanded>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Computer Lab</AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <p>
+                    The computer lab at SOCH has 48 PCs, one internet/file
+                    server and other switching/networking devices. Each PC is
+                    configured with software and tools required for various
+                    practical sessions. For a smooth and fast internet
+                    connectivity, we have a dedicated optical fiber link.
+                  </p>
+                </AccordionItemPanel>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
       </div>
     );
