@@ -218,12 +218,45 @@ class AboutUs extends Component {
                 <AccordionItemHeading>
                   <AccordionItemButton>Digital Lab</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>
-                    The digital lab at SOCH has sufficient sets of Digital logic
-                    trainer kit and DYNA-85 Microprocessor kit each.
-                  </p>
-                </AccordionItemPanel>
+                <div className="d-flex">
+                  <AccordionItemPanel>
+                    <p>
+                      The digital lab at SOCH has sufficient sets of Digital
+                      logic trainer kit and DYNA-85 Microprocessor kit each.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
