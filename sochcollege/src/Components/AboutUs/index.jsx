@@ -163,7 +163,7 @@ class AboutUs extends Component {
                   <AccordionItemButton>Computer Lab</AccordionItemButton>
                 </AccordionItemHeading>
                 <div className="d-flex">
-                  <AccordionItemPanel className="w-50">
+                  <AccordionItemPanel className="w-50 text-left p-5">
                     <p>
                       The computer lab at SOCH has 48 PCs, one internet/file
                       server and other switching/networking devices. Each PC is
