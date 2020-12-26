@@ -219,7 +219,7 @@ class AboutUs extends Component {
                   <AccordionItemButton>Digital Lab</AccordionItemButton>
                 </AccordionItemHeading>
                 <div className="d-flex">
-                  <AccordionItemPanel>
+                  <AccordionItemPanel className="w-50 text-left p-5">
                     <p>
                       The digital lab at SOCH has sufficient sets of Digital
                       logic trainer kit and DYNA-85 Microprocessor kit each.
@@ -262,15 +262,66 @@ class AboutUs extends Component {
                 <AccordionItemHeading>
                   <AccordionItemButton>Library</AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>
-                    The college has an extensive library containing more than
-                    1000 volumes of various subject books, encyclopedias,
-                    biographies, dictionaries and old projects. Furthermore our
-                    library contains subscribed newspapers, magazines - both
-                    national and international - and journals.
-                  </p>
-                </AccordionItemPanel>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The college has an extensive library containing more than
+                      1000 volumes of various subject books, encyclopedias,
+                      biographies, dictionaries and old projects. Furthermore
+                      our library contains subscribed newspapers, magazines -
+                      both national and international - and journals.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library5.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
