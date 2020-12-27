@@ -446,6 +446,10 @@ class AboutUs extends Component {
                     roundedCircle
                     alt=""
                   />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                </div>
                 </div>
               </div>
             </Carousel.Item>
