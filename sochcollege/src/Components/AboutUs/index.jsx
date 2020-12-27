@@ -435,6 +435,22 @@ class AboutUs extends Component {
           </div>
           <p className="text-left color-light p-2">WHAT ARE THEY SAYING</p>
         </div>
+        <div className="d-flex">
+          <Carousel className="pt-2 border border-light rounded">
+            <Carousel.Item id="first" interval={1000}>
+              <div className="d-flex flex-row">
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                </div>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </div>
     );
   }
