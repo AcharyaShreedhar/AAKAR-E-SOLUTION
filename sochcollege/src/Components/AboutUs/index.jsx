@@ -1,7 +1,17 @@
 import React, { Component } from "react";
-import { Carousel, Card, Button } from "react-bootstrap";
+import { Carousel, Card, Image } from "react-bootstrap";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 import CountUp from "react-countup";
 import principal from "../../images/Principal.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import "react-accessible-accordion/dist/fancy-example.css";
 import "./AboutUs.scss";
 
 class AboutUs extends Component {
@@ -65,7 +75,7 @@ class AboutUs extends Component {
           <div className="d-flex flex-row  pb-2">
             <Card className="w-50">
               <Card.Body>
-                <blockquote className="blockquote mb-0 message">
+                <blockquote className="blockquote mb-0 message p-5">
                   <p>
                     As principal of this college, I am pleased to welcome
                     prospective student, current student, lecturer, visitor,
@@ -137,6 +147,385 @@ class AboutUs extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="d-flex card">
+          <div className="d-flex p-3 bg-secondary">
+            <strong>College's Infrastructure</strong>
+          </div>
+          <p className="text-left p-2">
+            The college has its own property spread over 2 ropanies of land and
+            newly constructed building (Area 15000 Square Feet) with modern
+            amenities with an added attraction of peaceful environment and
+            greenery.
+          </p>
+          <div className="infrastructure backImg">
+            <Accordion allowZeroExpanded className="w-100">
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Computer Lab</AccordionItemButton>
+                </AccordionItemHeading>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The computer lab at SOCH has 48 PCs, one internet/file
+                      server and other switching/networking devices. Each PC is
+                      configured with software and tools required for various
+                      practical sessions. For a smooth and fast internet
+                      connectivity, we have a dedicated optical fiber link.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/computerlab4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Digital Lab</AccordionItemButton>
+                </AccordionItemHeading>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The digital lab at SOCH has sufficient sets of Digital
+                      logic trainer kit and DYNA-85 Microprocessor kit each.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/digitallab3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Library</AccordionItemButton>
+                </AccordionItemHeading>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The college has an extensive library containing more than
+                      1000 volumes of various subject books, encyclopedias,
+                      biographies, dictionaries and old projects. Furthermore
+                      our library contains subscribed newspapers, magazines -
+                      both national and international - and journals.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/library5.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Sports</AccordionItemButton>
+                </AccordionItemHeading>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      Students at SOCH have access to outdoor sports like table
+                      tennis, cricket and five-a-side football pitch located
+                      inside the college premises. Moreover students can play
+                      indoor games like chess in their leisure.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/sport3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton>Canteen</AccordionItemButton>
+                </AccordionItemHeading>
+                <div className="d-flex">
+                  <AccordionItemPanel className="w-50 text-left p-5">
+                    <p>
+                      The canteen situated at the top of the college building
+                      with panoramic view of Annapurna range provides freshly
+                      prepared snacks and meals in affordable price range for
+                      students.
+                    </p>
+                  </AccordionItemPanel>
+                  <AccordionItemPanel className="w-50">
+                    <Carousel className="pt-2 border border-light rounded">
+                      <Carousel.Item interval={1000}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen1.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={500}>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen2.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen3.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <div className="slideritem">
+                          <Image
+                            style={{ width: "18rem" }}
+                            src={"/images/canteen4.jpg"}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </AccordionItemPanel>
+                </div>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+        <div className="d-flex card">
+          <div className="d-flex p-3 bg-secondary">
+            <strong>Testimonials</strong>
+          </div>
+          <p className="text-left color-light p-2">WHAT ARE THEY SAYING</p>
+        </div>
+        <div className="d-flex">
+          <Carousel className="pt-2 border border-light rounded">
+            <Carousel.Item id="first" interval={1000}>
+              <div className="d-flex flex-row">
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item id="first" interval={1000}>
+              <div className="d-flex flex-row">
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </div>
     );
