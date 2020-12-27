@@ -449,6 +449,14 @@ class AboutUs extends Component {
                   <div className="d-flex flex-column text-left px-5">
                     <h3>Saul Goodman</h3>
                     <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
                 </div>
                 </div>
               </div>
