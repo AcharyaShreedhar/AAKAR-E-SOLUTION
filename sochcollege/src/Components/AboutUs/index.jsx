@@ -481,6 +481,50 @@ class AboutUs extends Component {
                 </div>
               </div>
             </Carousel.Item>
+            <Carousel.Item id="first" interval={1000}>
+              <div className="d-flex flex-row">
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+                <div className="w-50 d-flex card flex-row p-5">
+                  <Image
+                    style={{ width: "5rem", height: "5rem" }}
+                    src={"/images/avatar.png"}
+                    roundedCircle
+                    alt=""
+                  />
+                  <div className="d-flex flex-column text-left px-5">
+                    <h3>Saul Goodman</h3>
+                    <h4 className="text-secondary">Ceo &amp; Founder</h4>
+                    <p className="font-italic">
+                      <FontAwesomeIcon icon={faQuoteLeft} className="pr-1" />
+                      Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.
+                      <FontAwesomeIcon icon={faQuoteRight} className="pl-1" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
           </Carousel>
         </div>
       </div>
