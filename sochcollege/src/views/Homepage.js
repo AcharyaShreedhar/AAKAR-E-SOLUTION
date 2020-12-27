@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dashboard, AboutUs } from "../Components";
+import { Dashboard, AboutUs, Programme } from "../Components";
 import "./HomePage.css";
 
 class Homepage extends Component {
@@ -36,6 +36,9 @@ class Homepage extends Component {
         </section>
         <div className=" card d-flex px-5 rounded">
           <AboutUs />
+        </div>
+        <div className=" card d-flex px-5 rounded">
+          <Programme />
         </div>
       </div>
     );
