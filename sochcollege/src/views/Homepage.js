@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dashboard, AboutUs } from "../Components";
+import { Dashboard, AboutUs, Programme } from "../Components";
 import "./HomePage.css";
 
 class Homepage extends Component {
