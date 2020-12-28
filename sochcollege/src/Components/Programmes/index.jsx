@@ -220,6 +220,90 @@ class Programme extends Component {
                         </Table>
                       </AccordionItemPanel>
                     </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Second Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Third Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Fourth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Fifth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Sixth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Seventh Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Eighth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
                   </Accordion>
                 </AccordionItemPanel>
               </div>
