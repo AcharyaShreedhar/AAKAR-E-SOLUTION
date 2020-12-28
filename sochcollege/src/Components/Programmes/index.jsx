@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Image } from "react-bootstrap";
+import { Image, Table } from "react-bootstrap";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
 class Programme extends Component {
   constructor(props) {
@@ -21,11 +30,12 @@ class Programme extends Component {
         <div className="d-flex flex-row">
           <div className="d-flex card flex-row p-5">
             <Image
+              className="w-50"
               style={{ width: "20rem" }}
               src={"/images/library1.jpg"}
               alt=""
             />
-            <div className="d-flex flex-column text-left px-5">
+            <div className="d-flex w-50 flex-column text-left px-5">
               <h3>B.Sc. CSIT</h3>
               <h4 className="text-secondary">Overview</h4>
               <p className="font-italic">
@@ -52,6 +62,253 @@ class Programme extends Component {
               </p>
             </div>
           </div>
+        </div>
+        <div className="d-flex card p-5">
+          <div className="d-flex card pt-0">
+            <Image
+              className="rounded"
+              src={"/images/courseobjectives.png"}
+              alt=""
+            />
+          </div>
+          <div className="d-flex card pt-0">
+            <Image
+              className="rounded"
+              src={"/images/carreroptions.png"}
+              alt=""
+            />
+          </div>
+          <div className="d-flex card pt-0">
+            <Image
+              className="rounded"
+              src={"/images/EligibilityCriteria.png"}
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="d-flex card">
+          <Accordion allowZeroExpanded className="w-100">
+            <AccordionItem>
+              <AccordionItemHeading>
+                <AccordionItemButton>Syllabus</AccordionItemButton>
+              </AccordionItemHeading>
+              <div className="card p-0">
+                <AccordionItemPanel className="p-0">
+                  <Accordion allowZeroExpanded className="w-100">
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          First Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <Table striped bordered hover responsive>
+                          <thead>
+                            <tr>
+                              <th>S.N</th>
+                              <th>Subect Code</th>
+                              <th>Subject</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>CSC 101</td>
+                              <td>Introduction of IT</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>CSC 102</td>
+                              <td>Programming in C</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>STA-103</td>
+                              <td>Probability and Statistics</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>MTH 104</td>
+                              <td>Calculus and Analytical Geometry</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>PHY-105</td>
+                              <td>ELECTIVE : Physics I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>BIO-106</td>
+                              <td>ELECTIVE : Biology I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>GEO 107</td>
+                              <td>ELECTIVE : Geology I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>STA 108</td>
+                              <td>ELECTIVE : Statistics I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Second Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Third Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Fourth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Fifth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Sixth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Seventh Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          Eighth Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <div className="d-flex">
+                        <AccordionItemPanel>
+                          <p>Uploaded soon. Sorry for the inconvienience</p>
+                        </AccordionItemPanel>
+                      </div>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionItemPanel>
+              </div>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     );
