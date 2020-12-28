@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image } from "react-bootstrap";
+import { Image, Table } from "react-bootstrap";
 import {
   Accordion,
   AccordionItem,
