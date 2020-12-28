@@ -99,6 +99,124 @@ class Programme extends Component {
                           First Semester
                         </AccordionItemButton>
                       </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <Table striped bordered hover responsive>
+                          <thead>
+                            <tr>
+                              <th>S.N</th>
+                              <th>Subect Code</th>
+                              <th>Subject</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>CSC 101</td>
+                              <td>Introduction of IT</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>CSC 102</td>
+                              <td>Programming in C</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>STA-103</td>
+                              <td>Probability and Statistics</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>MTH 104</td>
+                              <td>Calculus and Analytical Geometry</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>PHY-105</td>
+                              <td>ELECTIVE : Physics I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>BIO-106</td>
+                              <td>ELECTIVE : Biology I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>GEO 107</td>
+                              <td>ELECTIVE : Geology I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>STA 108</td>
+                              <td>ELECTIVE : Statistics I</td>
+                              <a
+                                href="/pdfs/Distributed Networking.pdf"
+                                download
+                              >
+                                <td>
+                                  <FontAwesomeIcon icon={faFileDownload} />
+                                </td>
+                              </a>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </AccordionItemPanel>
                     </AccordionItem>
                   </Accordion>
                 </AccordionItemPanel>
