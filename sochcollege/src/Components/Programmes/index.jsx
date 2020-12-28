@@ -54,6 +54,15 @@ class Programme extends Component {
             </div>
           </div>
         </div>
+        <div className="d-flex card p-5">
+          <div className="d-flex card pt-0">
+            <Image
+              className="rounded"
+              src={"/images/courseobjectives.png"}
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     );
   }
