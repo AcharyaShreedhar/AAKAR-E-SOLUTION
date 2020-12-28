@@ -21,11 +21,12 @@ class Programme extends Component {
         <div className="d-flex flex-row">
           <div className="d-flex card flex-row p-5">
             <Image
+              className="w-50"
               style={{ width: "20rem" }}
               src={"/images/library1.jpg"}
               alt=""
             />
-            <div className="d-flex flex-column text-left px-5">
+            <div className="d-flex w-50 flex-column text-left px-5">
               <h3>B.Sc. CSIT</h3>
               <h4 className="text-secondary">Overview</h4>
               <p className="font-italic">
