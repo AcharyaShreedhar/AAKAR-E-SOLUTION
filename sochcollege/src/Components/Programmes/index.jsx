@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 
 class Programme extends Component {
   constructor(props) {
