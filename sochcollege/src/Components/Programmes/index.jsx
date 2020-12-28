@@ -62,6 +62,13 @@ class Programme extends Component {
               alt=""
             />
           </div>
+          <div className="d-flex card pt-0">
+            <Image
+              className="rounded"
+              src={"/images/carreroptions.png"}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     );
