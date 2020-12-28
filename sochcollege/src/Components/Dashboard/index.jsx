@@ -3,6 +3,7 @@
  * 12/23/2020
  */
 import React, { Component } from "react";
+import { Image } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import "./Dashboard.css";
 
@@ -19,7 +20,12 @@ class Dashboard extends Component {
       <div className="header fixed-top ">
         <div className="container d-flex align-items-center">
           <h1 className="logo mr-auto">
-            <img className="background" src={logo} alt="Soch College" />
+            <Image
+              className="background"
+              style={{ width: "10rem" }}
+              src={logo}
+              alt="Soch College"
+            />
           </h1>
 
           <nav className="nav-menu d-none d-lg-block">
