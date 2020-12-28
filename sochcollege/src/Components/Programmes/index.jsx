@@ -84,6 +84,28 @@ class Programme extends Component {
             />
           </div>
         </div>
+        <div className="d-flex card">
+          <Accordion allowZeroExpanded className="w-100">
+            <AccordionItem>
+              <AccordionItemHeading>
+                <AccordionItemButton>Syllabus</AccordionItemButton>
+              </AccordionItemHeading>
+              <div className="card p-0">
+                <AccordionItemPanel className="p-0">
+                  <Accordion allowZeroExpanded className="w-100">
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          First Semester
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionItemPanel>
+              </div>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </div>
     );
   }
