@@ -8,7 +8,6 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import CountUp from "react-countup";
-import principal from "../../images/Principal.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import "react-accessible-accordion/dist/fancy-example.css";
@@ -122,7 +121,7 @@ class AboutUs extends Component {
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }} className="w-50">
-              <Card.Img variant="top" src={principal} />
+              <Card.Img variant="top" src={"/images/Principal.png"} />
             </Card>
           </div>
         </div>
