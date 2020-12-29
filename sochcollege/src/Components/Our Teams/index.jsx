@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Table } from "react-bootstrap";
 
 class OurTeam extends Component {
   constructor(props) {
