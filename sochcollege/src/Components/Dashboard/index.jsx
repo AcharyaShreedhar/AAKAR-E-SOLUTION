@@ -4,7 +4,6 @@
  */
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
-import logo from "../../images/logo.png";
 import "./Dashboard.css";
 
 class Dashboard extends Component {
@@ -23,7 +22,7 @@ class Dashboard extends Component {
             <Image
               className="background"
               style={{ width: "10rem" }}
-              src={logo}
+              src={"/images/logo.png"}
               alt="Soch College"
             />
           </h1>
