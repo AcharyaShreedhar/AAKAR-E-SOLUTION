@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 
 class OurTeam extends Component {
   constructor(props) {
