@@ -50,6 +50,9 @@ class Homepage extends Component {
         <div className=" card d-flex px-5 rounded">
           <NewsAndEvents />
         </div>
+        <div className=" card d-flex px-5 rounded">
+          <Gallery />
+        </div>
       </div>
     );
   }

@@ -40,20 +40,16 @@
 }
 
 .backImg {
-  
-  background: url("../../images/mission.jpg") ;
   background-size: cover;
   .accordion__button {
     background-color: none !important;
   }
- 
 }
 
 .accordion__button {
   background-color: none !important;
-  background: url("../../images/mission.jpg") ;
 }
-.infrastructure{
+.infrastructure {
   display: flex;
   justify-content: space-between;
 }
