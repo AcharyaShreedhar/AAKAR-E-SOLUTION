@@ -16,10 +16,11 @@ class OurTeam extends Component {
             <strong>Our Team</strong>
           </div>
         </div>
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
-            <strong>Faculties</strong>
-          </div>
+        <div className="d-flex card text-left">
+          <strong>Academics</strong>
+        </div>
+        <div className="d-flex card text-left">
+          <strong>Administration</strong>
         </div>
       </div>
     );
