@@ -3,6 +3,7 @@ import {
   Dashboard,
   AboutUs,
   Programme,
+  OurTeam,
   NewsAndEvents,
   Gallery,
 } from "../Components";
@@ -46,6 +47,9 @@ class Homepage extends Component {
         </div>
         <div className=" card d-flex px-5 rounded">
           <Programme />
+        </div>
+        <div className=" card d-flex px-5 rounded">
+          <OurTeam />
         </div>
         <div className=" card d-flex px-5 rounded">
           <NewsAndEvents />
