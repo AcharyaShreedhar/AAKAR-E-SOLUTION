@@ -16,75 +16,160 @@ class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: null,
-      name: "",
-      phoneNumber: "",
-      email: "",
-      subject: "",
-      message: "",
+      input: {},
+      errors: {},
     };
   }
+
   handleSubmit(e) {
     e.preventDefault();
-    const { name, phoneNumber, email, subject, message } = this.state;
-    let templateParams = {
-      from_name: name,
-      from_phoneNumber: phoneNumber,
-      from_email: email,
-      to_name: "spacharya2537@gmail.com",
-      subject: subject,
-      message: message,
-    };
+    if (this.validate(this.state.input)) {
+      const { name, phoneNumber, email, message } = this.state.input;
+      let templateParams = {
+        from_name: name,
+        from_phoneNumber: phoneNumber,
+        from_email: email,
+        to_name: "spacharya2537@gmail.com",
+        message: message,
+      };
 
-    emailjs
-      .send(
-        "service_a701tti",
-        "template_kiafs64",
-        templateParams,
-        "user_71grJDF4CU0kQQdZsnnxM"
-      )
-      .then(
-        (response) => {
-          toast.success(
-            "Thanks for your feedback. Your feedback is successfully submitted. !",
-            {
-              position: "top-center",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            }
-          );
-        },
-        (err) => {
-          toast.error("Sorry ,Feedback submission failed.! Please try again", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
-
-    this.resetForm();
+      emailjs
+        .send(
+          "service_a701tti",
+          "template_kiafs64",
+          templateParams,
+          "user_71grJDF4CU0kQQdZsnnxM"
+        )
+        .then(
+          (response) => {
+            toast.success(
+              "Thanks for your feedback. Your feedback is successfully submitted. !",
+              {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              }
+            );
+          },
+          (error) => {
+            toast.error(
+              "Sorry ,Feedback submission failed.! Please try again",
+              {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              }
+            );
+          }
+        );
+      this.resetForm();
+    }
   }
   resetForm() {
     this.setState({
-      name: "",
-      phoneNumber: "",
-      email: "",
-      subject: "",
-      message: "",
+      input: {},
+      error: {},
     });
   }
   handleChange = (param, e) => {
-    this.setState({ [param]: e.target.value });
+    let input = this.state.input;
+    const newInput = {
+      ...input,
+      [param]: e.target.value,
+    };
+    this.setState({
+      input: newInput,
+    });
+    this.validate(newInput);
   };
+
+  validate(input) {
+    let errors = {};
+    let isValid = true;
+
+    if (
+      !input["name"] &&
+      !input["email"] &&
+      !input["phoneNumber"] &&
+      !input["message"]
+    ) {
+      isValid = false;
+      toast.error("Please fill all the required fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+    if (!input["name"]) {
+      isValid = false;
+      errors["name"] = "Please enter your Name.";
+    } else {
+      errors["name"] = null;
+    }
+
+    if (!input["email"]) {
+      isValid = false;
+      errors["email"] = "Please enter your email Address.";
+    } else {
+      errors["email"] = null;
+    }
+
+    if (typeof input["email"] !== "undefined") {
+      var pattern = new RegExp(
+        /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+      );
+      if (!pattern.test(input["email"])) {
+        isValid = false;
+        errors["email"] = "Please enter a valid email address.";
+      } else {
+        errors["email"] = null;
+      }
+    }
+
+    if (!input["phoneNumber"]) {
+      isValid = false;
+      errors["phoneNumber"] = "Please enter your phone number.";
+    } else {
+      errors["phoneNumber"] = null;
+    }
+
+    if (typeof input["phoneNumber"] !== "undefined") {
+      var pattern = new RegExp(/^[0-9\b]+$/);
+      if (!pattern.test(input["phoneNumber"])) {
+        isValid = false;
+        errors["phoneNumber"] = "Please enter only number.";
+      } else if (input["phoneNumber"].length != 10) {
+        isValid = false;
+        errors["phoneNumber"] = "Please enter valid phone number.";
+      } else {
+        errors["phoneNumber"] = null;
+      }
+    }
+    if (!input["message"]) {
+      isValid = false;
+      errors["message"] = "Please enter your feedback Message.";
+    } else {
+      errors["message"] = null;
+    }
+
+    this.setState({
+      errors: errors,
+    });
+
+    return isValid;
+  }
 
   render() {
     return (
@@ -108,72 +193,90 @@ class ContactUs extends Component {
         </div>
         <div className="d-flex card">
           <div className="d-flex p-2">
-            <strong>Location and Direction of Soch College</strong>
+           <p className="text-left"> <strong>Location and Direction of Soch College</strong></p>
           </div>
-          <Image className="rounded" src={"/images/sochmap.png"} alt="" />
+          <Image className="rounded border" src={"/images/sochmap.png"} alt="" />
         </div>
-        <div>
-          <h1 className="p-heading1">Feedback</h1>
-          <Form onSubmit={this.handleSubmit.bind(this)}>
-            <FormGroup controlId="formBasicName">
-              <Label className="text-muted">Name</Label>
-              <Input
-                type="text"
-                name="name"
-                value={this.state.name}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, "name")}
-                placeholder="Name"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicName">
-              <Label className="text-muted">Phone Number</Label>
-              <Input
-                type="text"
-                name="phoneNumber"
-                value={this.state.phoneNumber}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, "phoneNumber")}
-                placeholder="Phone Number"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicEmail">
-              <Label className="text-muted">Email address</Label>
-              <Input
-                type="email"
-                name="email"
-                value={this.state.email}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, "email")}
-                placeholder="Enter email"
-              />
-            </FormGroup>
+        <div className="d-flex">
+          <div className="w-50 card  p-5">
+            <h1 className="d-flex pb-2">Feedback</h1>
+            <Form onSubmit={this.handleSubmit.bind(this)}>
+              <FormGroup controlId="formBasicName">
+                <Label className="text-muted d-flex">Name</Label>
+                <Input
+                  type="text"
+                  name="name"
+                  value={this.state.input.name}
+                  className="text-primary"
+                  onChange={this.handleChange.bind(this, "name")}
+                  placeholder="Name"
+                />
+                <div className="text-danger text-left">
+                  {this.state.errors.name}
+                </div>
+              </FormGroup>
+              <FormGroup controlId="formBasicName">
+                <Label className="text-muted d-flex">Phone Number *</Label>
+                <Input
+                  type="text"
+                  name="phoneNumber"
+                  value={this.state.input.phoneNumber}
+                  className="text-primary"
+                  onChange={this.handleChange.bind(this, "phoneNumber")}
+                  placeholder="Phone Number"
+                />
+                <div className="text-danger text-left">
+                  {this.state.errors.phoneNumber}
+                </div>
+              </FormGroup>
+              <FormGroup controlId="formBasicEmail">
+                <Label className="text-muted d-flex">Email address *</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  value={this.state.input.email}
+                  className="text-primary"
+                  onChange={this.handleChange.bind(this, "email")}
+                  placeholder="Enter email"
+                />
+                <div className="text-danger text-left">
+                  {this.state.errors.email}
+                </div>
+              </FormGroup>
+              <FormGroup controlId="formBasicMessage">
+                <Label className="text-muted d-flex">Feedback Message</Label>
+                <Input
+                  type="textarea"
+                  name="message"
+                  className="text-primary"
+                  value={this.state.input.message}
+                  onChange={this.handleChange.bind(this, "message")}
+                />
+                <div className="text-danger text-left">
+                  {this.state.errors.message}
+                </div>
+              </FormGroup>
+              <Button
+                variant="primary"
+                type="submit"
+                className="btn btn-success"
+              >
+                Submit
+              </Button>
+            </Form>
+          </div>
+          <div className=" card w-50 p-5">
+            <h1 className="d-flex pb-2">Contact Address</h1>
+            <p className="text-left">
+              <strong>Soch College Of IT</strong>
+            </p>
+            <p className="text-left">Ranipauwa -11 ,</p>
+            <p className="text-left">Pokhara, NEPAL</p>
+            <p className="text-left">(Behind Nepal Telecom Office)</p>
 
-            <FormGroup controlId="formBasicSubject">
-              <Label className="text-muted">Subject</Label>
-              <Input
-                type="text"
-                name="subject"
-                className="text-primary"
-                value={this.state.subject}
-                onChange={this.handleChange.bind(this, "subject")}
-                placeholder="Subject"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicMessage">
-              <Label className="text-muted">Feedback Message</Label>
-              <Input
-                type="textarea"
-                name="message"
-                className="text-primary"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this, "message")}
-              />
-            </FormGroup>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
+            <p className="text-left">Tel: +977-61540120/524096</p>
+            <p className="text-left">E-mail: mail@sochcollege.edu.np</p>
+          </div>
         </div>
       </div>
     );
