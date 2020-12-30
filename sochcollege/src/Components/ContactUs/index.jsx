@@ -9,6 +9,8 @@ import {
   Label,
   Input,
 } from "reactstrap";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class ContactUs extends Component {
   constructor(props) {
