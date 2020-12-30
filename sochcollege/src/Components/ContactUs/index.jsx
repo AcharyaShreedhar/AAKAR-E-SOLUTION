@@ -9,8 +9,8 @@ import {
   Label,
   Input,
 } from "reactstrap";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class ContactUs extends Component {
   constructor(props) {
@@ -45,10 +45,29 @@ class ContactUs extends Component {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          toast.success(
+            "Thanks for your feedback. Your feedback is successfully submitted. !",
+            {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }
+          );
         },
         (err) => {
-          console.log("FAILED...", err);
+          toast.error("Sorry ,Feedback submission failed.! Please try again", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
       );
 
@@ -70,6 +89,18 @@ class ContactUs extends Component {
   render() {
     return (
       <div>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <ToastContainer />
         <div className="d-flex card">
           <div className="d-flex p-3 bg-secondary">
             <strong>Contact</strong>
