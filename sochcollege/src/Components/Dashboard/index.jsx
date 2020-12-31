@@ -3,6 +3,7 @@
  * 12/23/2020
  */
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 import { Image } from "react-bootstrap";
 import "./Dashboard.css";
 
@@ -29,33 +30,142 @@ class Dashboard extends Component {
 
           <nav className="nav-menu d-none d-lg-block">
             <ul>
-              <li className="active">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Programmes</a>
-              </li>
-              <li>
-                <a href="#">Our Faculties</a>
-              </li>
-              <li>
-                <a href="#">News and Events</a>
-              </li>
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="home">Home</a>
+                </li>
+              </Link>
+              <Link
+                to="about-us"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="about us">About Us</a>
+                </li>
+              </Link>
+              <Link
+                to="programme"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="programme">Programmes</a>
+                </li>
+              </Link>
+              <Link
+                to="our-team"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="our team">Our Faculties</a>
+                </li>
+              </Link>
+              <Link
+                to="news-events"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="news and events">News and Events</a>
+                </li>
+              </Link>
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="gallery">Gallery</a>
+                </li>
+              </Link>
+              <Link
+                to="contact-us"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
+                <li>
+                  <a href="contact">Contact Us</a>
+                </li>
+              </Link>
             </ul>
           </nav>
-
-          <a href="#" className="get-started-btn">
-            Get Started
-          </a>
+          <a className="get-started-btn">Get Started</a>
         </div>
       </div>
     );
