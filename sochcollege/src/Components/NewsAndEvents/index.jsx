@@ -12,27 +12,29 @@ class NewsAndEvents extends Component {
   render() {
     return (
       <div>
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
+        <div className="d-flex card pt-0">
+          <div className="sectiontitle">
             <strong>News And Events</strong>
           </div>
-          <p className="text-left color-light p-2">Guest Lectures</p>
+          <p className="text-left color-light p-2">Guest Lecturers</p>
         </div>
 
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column mt-1">
           <div className="d-flex card flex-row p-5 align-items-center">
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/gyanwali-1.jpg"}
-              alt=""
-            />
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/gyanwali-2.jpg"}
-              alt=""
-            />
+            <div className="w-50 mr-1 border-right">
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/gyanwali-1.jpg"}
+                alt=""
+              />
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/gyanwali-2.jpg"}
+                alt=""
+              />
+            </div>
             <div className="w-50 d-flex flex-column text-left px-5">
               <h3>Milan Gyawali</h3>
               <p className="font-italic">
@@ -54,30 +56,34 @@ class NewsAndEvents extends Component {
                 Soch.
               </p>
             </div>
-            <Image
-              className="w-25 p-1 rounded"
-              src={"/images/vabuk-1.jpg"}
-              alt=""
-            />
-            <Image
-              className="w-25 p-1 rounded"
-              src={"/images/vabuk-2.jpg"}
-              alt=""
-            />
+            <div className="w-50 d-flex flex-row pl-5 border-left">
+              <Image
+                className="p-1 rounded"
+                src={"/images/vabuk-1.jpg"}
+                alt=""
+              />
+              <Image
+                className="p-1 rounded"
+                src={"/images/vabuk-2.jpg"}
+                alt=""
+              />
+            </div>
           </div>
           <div className="d-flex card flex-row p-5 align-items-center">
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/lect1.jpg"}
-              alt=""
-            />
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/lect2.jpg"}
-              alt=""
-            />
+            <div className="w-50 mr-1 border-right">
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/lect1.jpg"}
+                alt=""
+              />
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/lect2.jpg"}
+                alt=""
+              />
+            </div>
             <div className="w-50 d-flex flex-column text-left px-5">
               <h3>Prof. Dr Albert Aukes</h3>
               <p className="font-italic">
@@ -96,30 +102,26 @@ class NewsAndEvents extends Component {
                 games applications.
               </p>
             </div>
-            <Image
-              className="w-25 p-1 rounded"
-              src={"/images/lect3.jpg"}
-              alt=""
-            />
-            <Image
-              className="w-25 p-1 rounded"
-              src={"/images/lect4.jpg"}
-              alt=""
-            />
+            <div className="w-50 d-flex flex-row pl-5 border-left">
+              <Image className="p-1 rounded" src={"/images/lect3.jpg"} alt="" />
+              <Image className="p-1 rounded" src={"/images/lect4.jpg"} alt="" />
+            </div>
           </div>
           <div className="d-flex card flex-row p-5 align-items-center">
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/lect5.jpg"}
-              alt=""
-            />
-            <Image
-              className="w-25 p-1 rounded"
-              style={{ width: "16rem", height: "16rem" }}
-              src={"/images/lect6.jpg"}
-              alt=""
-            />
+            <div className="w-50 d-flex flex-row mr-5 border-right">
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/lect5.jpg"}
+                alt=""
+              />
+              <Image
+                className="p-1 rounded"
+                style={{ width: "16rem", height: "16rem" }}
+                src={"/images/lect6.jpg"}
+                alt=""
+              />
+            </div>
             <div className="w-50 d-flex flex-column text-left px-5">
               <h3>Vaskar Pahari</h3>
               <p className="font-italic">

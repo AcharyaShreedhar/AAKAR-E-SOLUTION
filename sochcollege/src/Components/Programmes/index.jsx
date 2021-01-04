@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Table } from "react-bootstrap";
+import { Card, Image, Table, Row, Col, Container } from "react-bootstrap";
 import {
   Accordion,
   AccordionItem,
@@ -20,22 +20,19 @@ class Programme extends Component {
 
   render() {
     return (
-      <div>
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
+      <div className="w-100">
+        <div className="card mt-1 pt-0">
+          <div className="sectiontitle">
             <strong>Programme</strong>
           </div>
           <p className="text-left color-light p-2">B.Sc.CSIT</p>
         </div>
         <div className="d-flex flex-row">
-          <div className="d-flex card flex-row p-5">
-            <Image
-              className="w-50"
-              style={{ width: "20rem" }}
-              src={"/images/library1.jpg"}
-              alt=""
-            />
-            <div className="d-flex w-50 flex-column text-left px-5">
+          <Card style={{ width: "18rem" }} className="w-50">
+            <Card.Img variant="top" src={"/images/library1.jpg"} />
+          </Card>
+          <Card className="w-50">
+            <Card.Body>
               <h3>B.Sc. CSIT</h3>
               <h4 className="text-secondary">Overview</h4>
               <p className="font-italic">
@@ -60,34 +57,41 @@ class Programme extends Component {
                 also rewarding and fun. Thus it is the right program for
                 students who are passionate about Technology and Communication.
               </p>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
         </div>
-        <div className="d-flex card p-5">
-          <div className="d-flex card pt-0">
-            <Image
-              className="rounded"
-              src={"/images/courseobjectives.png"}
-              alt=""
-            />
-          </div>
-          <div className="d-flex card pt-0">
-            <Image
-              className="rounded"
-              src={"/images/carreroptions.png"}
-              alt=""
-            />
-          </div>
-          <div className="d-flex card pt-0">
-            <Image
-              className="rounded"
-              src={"/images/EligibilityCriteria.png"}
-              alt=""
-            />
-          </div>
+        <div className="d-flex card my-2">
+          <Container>
+            <Row>
+              <Col xs={4} sm={6} md={8} lg={12} className="py-2">
+                <Image
+                  className="rounded"
+                  src={"/images/courseobjectives.png"}
+                  alt=""
+                  fluid
+                />
+              </Col>
+              <Col xs={4} sm={6} md={8} lg={12} className="py-2">
+                <Image
+                  className="rounded"
+                  src={"/images/carreroptions.png"}
+                  alt=""
+                  fluid
+                />
+              </Col>
+              <Col xs={4} sm={6} md={8} lg={12} className="py-2">
+                <Image
+                  className="rounded"
+                  src={"/images/eligibilitycriteria.png"}
+                  alt=""
+                  fluid
+                />
+              </Col>
+            </Row>
+          </Container>
         </div>
-        <div className="d-flex card">
-          <Accordion allowZeroExpanded className="w-100">
+        <div className="card pt-0 mt-1">
+          <Accordion allowZeroExpanded>
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>Syllabus</AccordionItemButton>
@@ -309,7 +313,7 @@ class Programme extends Component {
               </div>
             </AccordionItem>
           </Accordion>
-        </div>
+        </div>{" "}
       </div>
     );
   }

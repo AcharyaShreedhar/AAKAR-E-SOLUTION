@@ -19,14 +19,17 @@ class Dashboard extends Component {
     return (
       <div className="header fixed-top ">
         <div className="container d-flex align-items-center">
-          <h1 className="logo mr-auto">
+          <h1 class="logo mr-auto">
+            <a href="index.html">Soch College</a>
+          </h1>
+          {/* <h1 className="logo mr-auto">
             <Image
-              className="background"
+              
               style={{ width: "10rem" }}
               src={"/images/logo.png"}
               alt="Soch College"
             />
-          </h1>
+          </h1> */}
 
           <nav className="nav-menu d-none d-lg-block">
             <ul>
