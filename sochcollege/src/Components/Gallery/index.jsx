@@ -11,13 +11,13 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div>
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
+      <div className="w-100">
+        <div className="card pt-0">
+          <div className="sectiontitle">
             <strong>Gallery</strong>
           </div>
         </div>
-        <div className="d-flex card my-2">
+        <div className="d-flex card my-1">
           <Container>
             <Row>
               <Col xs={6} md={4} className="py-2">

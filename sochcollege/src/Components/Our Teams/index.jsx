@@ -18,14 +18,14 @@ class OurTeam extends Component {
 
   render() {
     return (
-      <div>
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
+      <div className="w-100">
+        <div className="card pt-0">
+          <div className="sectiontitle">
             <strong>Our Team</strong>
           </div>
         </div>
-        <div className="d-flex card">
-          <Accordion allowZeroExpanded className="w-100">
+        <div className="card pt-0 w-100">
+          <Accordion allowZeroExpanded>
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>Academics</AccordionItemButton>
