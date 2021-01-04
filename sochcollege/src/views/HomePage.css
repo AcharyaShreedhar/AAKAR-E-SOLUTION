@@ -7,6 +7,9 @@
   height: 80vh;
   background-size: cover;
   position: relative;
+  background: url('../images/soch.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }
 
 .hero:before {
@@ -62,6 +65,18 @@
   background: #5fcf80;
   border: 2px solid #5fcf80;
 }
+.sectioncard  {
+  display: flex;
+  padding:50px 20px 5px 50px;
+}
+
+.sectiontitle{
+ 
+  display: flex;
+  padding:20px;
+  background-color: gray;
+  border-radius: 2px;
+  }
 
 @media (min-width: 1024px) {
   .hero {

@@ -34,7 +34,7 @@ class AboutUs extends Component {
           </p>
         </div>
         <Carousel className="card mt-1">
-          <Carousel.Item interval={10000} className="missionBack">
+          <Carousel.Item interval={1000} className="missionBack">
             <div className="slideritem">
               <h3>Our Mission</h3>
               <p>
@@ -47,7 +47,7 @@ class AboutUs extends Component {
               </p>
             </div>
           </Carousel.Item>
-          <Carousel.Item interval={10000} className="visionBack">
+          <Carousel.Item interval={500}>
             <div className="slideritem">
               <h3>Our Vision</h3>
               <p>
@@ -57,7 +57,7 @@ class AboutUs extends Component {
               <p>Creation of job opportunities in society.</p>
             </div>
           </Carousel.Item>
-          <Carousel.Item interval={10000} className="objectiveBack">
+          <Carousel.Item>
             <div className="slideritem">
               <h3>Our Objectives</h3>
               <p>Aim high.</p>

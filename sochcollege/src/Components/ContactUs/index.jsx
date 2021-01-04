@@ -173,7 +173,7 @@ class ContactUs extends Component {
 
   render() {
     return (
-      <div>
+      <div className="w-100">
         <ToastContainer
           position="top-center"
           autoClose={5000}
@@ -186,20 +186,20 @@ class ContactUs extends Component {
           pauseOnHover
         />
         <ToastContainer />
-        <div className="d-flex card">
-          <div className="d-flex p-3 bg-secondary">
+        <div className="d-flex card pt-0">
+          <div className="sectiontitle">
             <strong>Contact</strong>
           </div>
         </div>
-        <div className="d-flex card">
+        <div className="d-flex card mt-1">
           <div className="d-flex p-2">
            <p className="text-left"> <strong>Location and Direction of Soch College</strong></p>
           </div>
           <Image className="rounded border" src={"/images/sochmap.png"} alt="" />
         </div>
-        <div className="d-flex">
+        <div className="d-flex  mt-1">
           <div className="w-50 card  p-5">
-            <h1 className="d-flex pb-2">Feedback</h1>
+            <h1 className="d-flex pb-2 border-bottom">Feedback</h1>
             <Form onSubmit={this.handleSubmit.bind(this)}>
               <FormGroup controlId="formBasicName">
                 <Label className="text-muted d-flex">Name</Label>
@@ -266,7 +266,7 @@ class ContactUs extends Component {
             </Form>
           </div>
           <div className=" card w-50 p-5">
-            <h1 className="d-flex pb-2">Contact Address</h1>
+            <h1 className="d-flex pb-2 border-bottom">Contact Address</h1>
             <p className="text-left">
               <strong>Soch College Of IT</strong>
             </p>
