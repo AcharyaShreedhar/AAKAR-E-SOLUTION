@@ -168,7 +168,23 @@ class Dashboard extends Component {
               </Link>
             </ul>
           </nav>
+          <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                onSetActive={this.handleSetActive}
+                onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+                className="p-2"
+                activeClass="active"
+              >
           <a className="get-started-btn">Get Started</a>
+          </Link>
         </div>
       </div>
     );

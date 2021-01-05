@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 import { Element } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 import {
@@ -47,9 +48,25 @@ class Homepage extends Component {
                     Leading Tomorrow
                   </h1>
                   <h2>We believe in hard work and excellence .</h2>
-                  <a href="home" className="btn-get-started">
-                    Get Started
-                  </a>
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-50}
+                    duration={500}
+                    delay={1000}
+                    isDynamic={true}
+                    onSetActive={this.handleSetActive}
+                    onSetInactive={this.handleSetInactive}
+                    ignoreCancelEvents={false}
+                    className="p-2"
+                    activeClass="active"
+                  >
+                    <a href="home" className="btn-get-started">
+                      Get Started
+                    </a>
+                  </Link>
                 </div>
               </section>
             </Element>
