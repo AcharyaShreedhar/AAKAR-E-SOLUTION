@@ -10,6 +10,7 @@ import {
   NewsAndEvents,
   Gallery,
   ContactUs,
+  Footer
 } from "../Components";
 
 import "./HomePage.css";
@@ -106,6 +107,11 @@ class Homepage extends Component {
           <Element id="contact-us" name="contact-us" className="mt-5">
             <div className="sectioncard">
               <ContactUs />
+            </div>
+          </Element>
+          <Element id="footer" name="footer">
+            <div className="sectioncard  p-0">
+              <Footer />
             </div>
           </Element>
         </React.Fragment>

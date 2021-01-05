@@ -1,0 +1,24 @@
+.footerSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+  background-color: lavender;
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px 100px 5px 100px;
+  }
+  .copyRight {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+  }
+}
