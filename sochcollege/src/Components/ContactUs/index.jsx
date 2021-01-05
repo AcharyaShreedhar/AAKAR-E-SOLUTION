@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Element } from "react-scroll";
 import { Image } from "react-bootstrap";
 import * as emailjs from "emailjs-com";
 import {
@@ -197,9 +198,11 @@ class ContactUs extends Component {
           </div>
           <Image className="rounded border" src={"/images/sochmap.png"} alt="" />
         </div>
+        <React.Fragment>
+        <Element id="contact" name="contact">
         <div className="d-flex  mt-1">
           <div className="w-50 card  p-5">
-            <h1 className="d-flex pb-2 border-bottom">Feedback</h1>
+            <h1 className="d-flex pb-2 border-bottom">Contact</h1>
             <Form onSubmit={this.handleSubmit.bind(this)}>
               <FormGroup controlId="formBasicName">
                 <Label className="text-muted d-flex">Name</Label>
@@ -244,7 +247,7 @@ class ContactUs extends Component {
                 </div>
               </FormGroup>
               <FormGroup controlId="formBasicMessage">
-                <Label className="text-muted d-flex">Feedback Message</Label>
+                <Label className="text-muted d-flex">Message</Label>
                 <Input
                   type="textarea"
                   name="message"
@@ -265,6 +268,7 @@ class ContactUs extends Component {
               </Button>
             </Form>
           </div>
+          
           <div className=" card w-50 p-5">
             <h1 className="d-flex pb-2 border-bottom">Contact Address</h1>
             <p className="text-left">
@@ -278,6 +282,8 @@ class ContactUs extends Component {
             <p className="text-left">E-mail: mail@sochcollege.edu.np</p>
           </div>
         </div>
+        </Element>
+        </React.Fragment>
       </div>
     );
   }
