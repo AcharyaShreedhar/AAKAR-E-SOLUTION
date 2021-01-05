@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Element } from "react-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
 import {
   Dashboard,
   AboutUs,
@@ -25,28 +26,34 @@ class Homepage extends Component {
       <div>
         <Dashboard />
         <React.Fragment className="mt-5">
-          <Element id="home" name="home" className="mt-5">
-            <section
-              id="hero"
-              className="hero d-flex justify-content-center align-items-center"
-            >
-              <div
-                className="container position-relative"
-                data-aos="zoom-in"
-                data-aos-delay="100"
+          <ScrollAnimation
+            animateIn="zoomIn"
+            duration={1}
+            initiallyVisible={true}
+          >
+            <Element id="home" name="home" className="mt-5">
+              <section
+                id="hero"
+                className="hero d-flex justify-content-center align-items-center"
               >
-                <h1>
-                  Learning Today,
-                  <br />
-                  Leading Tomorrow
-                </h1>
-                <h2>We believe in hard work and excellence .</h2>
-                <a href="home" className="btn-get-started">
-                  Get Started
-                </a>
-              </div>
-            </section>
-          </Element>
+                <div
+                  className="container position-relative"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <h1>
+                    Learning Today,
+                    <br />
+                    Leading Tomorrow
+                  </h1>
+                  <h2>We believe in hard work and excellence .</h2>
+                  <a href="home" className="btn-get-started">
+                    Get Started
+                  </a>
+                </div>
+              </section>
+            </Element>
+          </ScrollAnimation>
           <Element id="about-us" name="about-us" className="mt-5">
             <div className="sectioncard">
               <AboutUs />
@@ -59,9 +66,15 @@ class Homepage extends Component {
             </div>
           </Element>
           <Element id="our-team" name="our-team" className="mt-5">
-            <div className="sectioncard">
-              <OurTeam />
-            </div>
+            <ScrollAnimation
+              animateIn="pulse"
+              duration={1}
+              initiallyVisible={true}
+            >
+              <div className="sectioncard">
+                <OurTeam />
+              </div>
+            </ScrollAnimation>
           </Element>
           <Element id="news-events" name="news-events" className="mt-5">
             <div className="sectioncard">

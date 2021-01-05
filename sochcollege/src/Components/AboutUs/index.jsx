@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Carousel, Card, Image } from "react-bootstrap";
+import ScrollAnimation from "react-animate-on-scroll";
 import {
   Accordion,
   AccordionItem,
@@ -24,15 +25,22 @@ class AboutUs extends Component {
   render() {
     return (
       <div>
-        <div className="card text-center">
-          <h2>About Us</h2>
-          <p>
-            <strong>SOCH COLLEGE OF IT – </strong>affiliated with Tribhuvan
-            University - is situated in the beautiful city of Pokhara,
-            Ranipauwa, within easy reach of central Mahendrapool. Since its
-            inception, SOCH has been delivering quality education in computing.
-          </p>
-        </div>
+        <ScrollAnimation
+          animateIn="zoomIn"
+          duration={1}
+          initiallyVisible={true}
+        >
+          <div className="card text-center">
+            <h2>About Us</h2>
+            <p>
+              <strong>SOCH COLLEGE OF IT – </strong>affiliated with Tribhuvan
+              University - is situated in the beautiful city of Pokhara,
+              Ranipauwa, within easy reach of central Mahendrapool. Since its
+              inception, SOCH has been delivering quality education in
+              computing.
+            </p>
+          </div>
+        </ScrollAnimation>
         <Carousel className="card mt-1">
           <Carousel.Item interval={10000} className="missionBack">
             <div className="slideritem">
@@ -67,6 +75,11 @@ class AboutUs extends Component {
             </div>
           </Carousel.Item>
         </Carousel>
+        <ScrollAnimation
+          animateIn="fadeInLeft"
+          duration={2}
+          initiallyVisible={true}
+        >
         <div className="d-flex flex-column mt-1">
           <div className="sectiontitle">
             <strong>Principal's Message</strong>
@@ -125,6 +138,7 @@ class AboutUs extends Component {
             </Card>
           </div>
         </div>
+        </ScrollAnimation>
         <div className="d-flex counts mt-1">
           <div class="container">
             <div class="row counters">
@@ -428,7 +442,7 @@ class AboutUs extends Component {
             </Accordion>
           </div>
         </div>
-        <div className="d-flex card pt-0 mt-1">
+        {/* <div className="d-flex card pt-0 mt-1">
           <div className="sectiontitle">
             <strong>Testimonials</strong>
           </div>
@@ -525,7 +539,7 @@ class AboutUs extends Component {
               </div>
             </Carousel.Item>
           </Carousel>
-        </div>
+        </div> */}
       </div>
     );
   }
