@@ -9,9 +9,7 @@
   background-color: lavender;
 
   .logo {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+   align-self: center;
     padding: 5px 100px 5px 100px;
   }
   .copyRight {

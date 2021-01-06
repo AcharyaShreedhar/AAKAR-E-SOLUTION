@@ -1,20 +1,18 @@
 import "./footer.scss";
-import { Image } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
 
 function Footer() {
   return (
-    <div className="footerSection">
-      <div className="logo">
-        <Image
-          style={{ width: "10rem" }}
-          src={"/images/sochlogo.png"}
-          alt="Soch College"
-        />
-      </div>
-      <div className="copyRight">
-        <p> © 2021 Soch College of IT. All Rights Reserved.</p>
-      </div>
-    </div>
+    <Row className="item footerSection">
+      <Col xs={12} sm={2} md={2} lg={2}>
+        <Image src={"/images/sochlogo.png"} alt="Soch College" fluid />
+      </Col>
+      <Col xs={12} sm={10} md={10} lg={10}>
+        <p className="text-start">
+          © 2021 Soch College of IT. All Rights Reserved.
+        </p>
+      </Col>
+    </Row>
   );
 }
 

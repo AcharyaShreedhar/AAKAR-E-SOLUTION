@@ -4,7 +4,7 @@
  */
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-import { Image } from "react-bootstrap";
+import { Image, Navbar, Nav, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
 
 class Dashboard extends Component {
@@ -18,21 +18,26 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="header fixed-top ">
-        <div className="container d-flex align-items-center">
-          <h1 class="logo mr-auto">
-            <a href="index.html">Soch College</a>
-          </h1>
-          {/* <h1 className="logo mr-auto">
-            <Image
-              
-              style={{ width: "10rem" }}
-              src={"/images/logo.png"}
-              alt="Soch College"
-            />
-          </h1> */}
-
-          <nav className="nav-menu d-none d-lg-block">
-            <ul>
+        <Navbar className="nav-menu" expand="lg">
+          <Navbar.Brand href="#home">
+            <Row>
+              <Col>
+                <Image
+                  src={"/images/sochlogo.png"}
+                  style={{ width: "5rem" }}
+                  alt="Soch College"
+                  fluid
+                />
+              </Col>
+              <Col>
+                <h3 className="title"> SOCH COLLEGE</h3>
+                <h3 className="title">OF IT</h3>
+              </Col>
+            </Row>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav>
               <Link
                 to="home"
                 spy={true}
@@ -45,12 +50,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="home">Home</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="about-us"
@@ -64,12 +68,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="about us">About Us</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="programme"
@@ -83,12 +86,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="programme">Programmes</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="our-team"
@@ -102,12 +104,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="our team">Our Faculties</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="news-events"
@@ -121,12 +122,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="news and events">News and Events</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="gallery"
@@ -140,12 +140,11 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="gallery">Gallery</a>
-                </li>
+                </Nav.Link>
               </Link>
               <Link
                 to="contact-us"
@@ -159,33 +158,31 @@ class Dashboard extends Component {
                 onSetActive={this.handleSetActive}
                 onSetInactive={this.handleSetInactive}
                 ignoreCancelEvents={false}
-                className="p-2"
                 activeClass="active"
               >
-                <li>
+                <Nav.Link>
                   <a href="contact">Contact Us</a>
-                </li>
+                </Nav.Link>
               </Link>
-            </ul>
-          </nav>
-          <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                hashSpy={true}
-                offset={-50}
-                duration={500}
-                delay={1000}
-                isDynamic={true}
-                onSetActive={this.handleSetActive}
-                onSetInactive={this.handleSetInactive}
-                ignoreCancelEvents={false}
-                className="p-2"
-                activeClass="active"
-              >
-          <a className="get-started-btn">Get Started</a>
-          </Link>
-        </div>
+            </Nav>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-50}
+              duration={500}
+              delay={1000}
+              isDynamic={true}
+              onSetActive={this.handleSetActive}
+              onSetInactive={this.handleSetInactive}
+              ignoreCancelEvents={false}
+              activeClass="active"
+            >
+              <a className="get-started-btn">Get Started</a>
+            </Link>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
     );
   }
