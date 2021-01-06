@@ -1,5 +1,6 @@
 {
   "name": "sochcollege",
+  "homepage":"https://sochcollege.edu.np",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

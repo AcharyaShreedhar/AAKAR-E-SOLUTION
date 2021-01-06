@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Element } from "react-scroll";
-import { Image } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
 import * as emailjs from "emailjs-com";
 import {
   Button,
@@ -194,95 +194,102 @@ class ContactUs extends Component {
         </div>
         <div className="d-flex card mt-1">
           <div className="d-flex p-2">
-           <p className="text-left"> <strong>Location and Direction of Soch College</strong></p>
+            <p className="text-left">
+              <strong>Location and Direction of Soch College</strong>
+            </p>
           </div>
-          <Image className="rounded border" src={"/images/sochmap.png"} alt="" />
+          <Image
+            className="rounded border"
+            src={"/images/sochmap.jpg"}
+            alt=""
+            fluid
+          />
         </div>
         <React.Fragment>
-        <Element id="contact" name="contact">
-        <div className="d-flex  mt-1">
-          <div className="w-50 card  p-5">
-            <h1 className="d-flex pb-2 border-bottom">Contact</h1>
-            <Form onSubmit={this.handleSubmit.bind(this)}>
-              <FormGroup controlId="formBasicName">
-                <Label className="text-muted d-flex">Name</Label>
-                <Input
-                  type="text"
-                  name="name"
-                  value={this.state.input.name}
-                  className="text-primary"
-                  onChange={this.handleChange.bind(this, "name")}
-                  placeholder="Name"
-                />
-                <div className="text-danger text-left">
-                  {this.state.errors.name}
-                </div>
-              </FormGroup>
-              <FormGroup controlId="formBasicName">
-                <Label className="text-muted d-flex">Phone Number *</Label>
-                <Input
-                  type="text"
-                  name="phoneNumber"
-                  value={this.state.input.phoneNumber}
-                  className="text-primary"
-                  onChange={this.handleChange.bind(this, "phoneNumber")}
-                  placeholder="Phone Number"
-                />
-                <div className="text-danger text-left">
-                  {this.state.errors.phoneNumber}
-                </div>
-              </FormGroup>
-              <FormGroup controlId="formBasicEmail">
-                <Label className="text-muted d-flex">Email address *</Label>
-                <Input
-                  type="email"
-                  name="email"
-                  value={this.state.input.email}
-                  className="text-primary"
-                  onChange={this.handleChange.bind(this, "email")}
-                  placeholder="Enter email"
-                />
-                <div className="text-danger text-left">
-                  {this.state.errors.email}
-                </div>
-              </FormGroup>
-              <FormGroup controlId="formBasicMessage">
-                <Label className="text-muted d-flex">Message</Label>
-                <Input
-                  type="textarea"
-                  name="message"
-                  className="text-primary"
-                  value={this.state.input.message}
-                  onChange={this.handleChange.bind(this, "message")}
-                />
-                <div className="text-danger text-left">
-                  {this.state.errors.message}
-                </div>
-              </FormGroup>
-              <Button
-                variant="primary"
-                type="submit"
-                className="btn btn-success"
-              >
-                Submit
-              </Button>
-            </Form>
-          </div>
-          
-          <div className=" card w-50 p-5">
-            <h1 className="d-flex pb-2 border-bottom">Contact Address</h1>
-            <p className="text-left">
-              <strong>Soch College Of IT</strong>
-            </p>
-            <p className="text-left">Ranipauwa -11 ,</p>
-            <p className="text-left">Pokhara, NEPAL</p>
-            <p className="text-left">(Behind Nepal Telecom Office)</p>
+          <Element id="contact" name="contact">
+            <Row className="item">
+              <Col xs={12} sm={6} md={6} className="item">
+                <h1 className="d-flex pb-2 border-bottom">Contact</h1>
+                <Form onSubmit={this.handleSubmit.bind(this)}>
+                  <FormGroup controlId="formBasicName">
+                    <Label className="text-muted d-flex">Name</Label>
+                    <Input
+                      type="text"
+                      name="name"
+                      value={this.state.input.name}
+                      className="text-primary"
+                      onChange={this.handleChange.bind(this, "name")}
+                      placeholder="Name"
+                    />
+                    <div className="text-danger text-left">
+                      {this.state.errors.name}
+                    </div>
+                  </FormGroup>
+                  <FormGroup controlId="formBasicName">
+                    <Label className="text-muted d-flex">Phone Number *</Label>
+                    <Input
+                      type="text"
+                      name="phoneNumber"
+                      value={this.state.input.phoneNumber}
+                      className="text-primary"
+                      onChange={this.handleChange.bind(this, "phoneNumber")}
+                      placeholder="Phone Number"
+                    />
+                    <div className="text-danger text-left">
+                      {this.state.errors.phoneNumber}
+                    </div>
+                  </FormGroup>
+                  <FormGroup controlId="formBasicEmail">
+                    <Label className="text-muted d-flex">Email address *</Label>
+                    <Input
+                      type="email"
+                      name="email"
+                      value={this.state.input.email}
+                      className="text-primary"
+                      onChange={this.handleChange.bind(this, "email")}
+                      placeholder="Enter email"
+                    />
+                    <div className="text-danger text-left">
+                      {this.state.errors.email}
+                    </div>
+                  </FormGroup>
+                  <FormGroup controlId="formBasicMessage">
+                    <Label className="text-muted d-flex">Message</Label>
+                    <Input
+                      type="textarea"
+                      name="message"
+                      className="text-primary"
+                      value={this.state.input.message}
+                      onChange={this.handleChange.bind(this, "message")}
+                    />
+                    <div className="text-danger text-left">
+                      {this.state.errors.message}
+                    </div>
+                  </FormGroup>
 
-            <p className="text-left">Tel: +977-61540120/524096</p>
-            <p className="text-left">E-mail: mail@sochcollege.edu.np</p>
-          </div>
-        </div>
-        </Element>
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="btn btn-success"
+                  >
+                    Submit
+                  </Button>
+                </Form>
+              </Col>
+              <Col xs={12} sm={6} md={6} className="item">
+                <h1 className="d-flex pb-2 border-bottom">Contact Address</h1>
+                <p className="text-left">
+                  <strong>Soch College Of IT</strong>
+                </p>
+                <p className="text-left">Ranipauwa -11 ,</p>
+                <p className="text-left">Pokhara, NEPAL</p>
+                <p className="text-left">(Behind Nepal Telecom Office)</p>
+
+                <p className="text-left">Tel: +977-61540120/524096</p>
+                <p className="text-left">E-mail: mail@sochcollege.edu.np</p>
+              </Col>
+            </Row>
+          </Element>
         </React.Fragment>
       </div>
     );

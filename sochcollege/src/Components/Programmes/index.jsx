@@ -28,46 +28,56 @@ class Programme extends Component {
           </div>
           <p className="text-left color-light p-2">B.Sc.CSIT</p>
         </div>
-        <div className="d-flex flex-row">
-          <Card style={{ width: "18rem" }} className="w-50">
-            <Card.Img variant="top" src={"/images/library1.jpg"} />
-          </Card>
-          <Card className="w-50">
-            <Card.Body>
-              <h3>B.Sc. CSIT</h3>
-              <h4 className="text-secondary">Overview</h4>
-              <p className="font-italic">
-                B.Sc.CSIT offered by Institute of Science and Technology,
-                Tribhuvan University, Nepal is a four years – 8 semesters –
-                academic program.
-              </p>
+        <Row>
+          <Col xs={12} sm={6} md={6}>
+            <Card>
+              <Card.Img
+                variant="top"
+                className="imageItem"
+                src={"/images/library1.jpg"}
+                fluid
+              />
+            </Card>
+          </Col>
+          <Col xs={12} sm={6} md={6}>
+            <Card>
+              <Card.Body>
+                <h3>B.Sc. CSIT</h3>
+                <h4 className="text-secondary">Overview</h4>
+                <p className="font-italic">
+                  B.Sc.CSIT offered by Institute of Science and Technology,
+                  Tribhuvan University, Nepal is a four years – 8 semesters –
+                  academic program.
+                </p>
 
-              <p className="font-italic">
-                This program ensures that graduates have a broad basic knowledge
-                and creative skills to conceive, design, build and exploit
-                Information Processing Systems. In addition to this, the program
-                also stimulates development of soft skills such as team work,
-                effective communication, technology management etc. These skills
-                are acquired through the execution of various projects, lab
-                works, presentations, case studies and seminars throughout the
-                entire program.
-              </p>
+                <p className="font-italic">
+                  This program ensures that graduates have a broad basic
+                  knowledge and creative skills to conceive, design, build and
+                  exploit Information Processing Systems. In addition to this,
+                  the program also stimulates development of soft skills such as
+                  team work, effective communication, technology management etc.
+                  These skills are acquired through the execution of various
+                  projects, lab works, presentations, case studies and seminars
+                  throughout the entire program.
+                </p>
 
-              <p className="font-italic">
-                It is a challenging and demanding program. Nevertheless it is
-                also rewarding and fun. Thus it is the right program for
-                students who are passionate about Technology and Communication.
-              </p>
-            </Card.Body>
-          </Card>
-        </div>
+                <p className="font-italic">
+                  It is a challenging and demanding program. Nevertheless it is
+                  also rewarding and fun. Thus it is the right program for
+                  students who are passionate about Technology and
+                  Communication.
+                </p>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
         <div className="d-flex card my-2">
           <Container>
             <Row>
               <Col xs={4} sm={6} md={8} lg={12} className="py-2">
                 <ScrollAnimation
                   animateIn="rollIn"
-                  animateOnce='true'
+                  animateOnce="true"
                   duration={1}
                   initiallyVisible={true}
                 >
@@ -82,7 +92,7 @@ class Programme extends Component {
               <Col xs={4} sm={6} md={8} lg={12} className="py-2">
                 <ScrollAnimation
                   animateIn="rollIn"
-                  animateOnce='true'
+                  animateOnce="true"
                   duration={1}
                   initiallyVisible={true}
                 >
@@ -97,7 +107,7 @@ class Programme extends Component {
               <Col xs={4} sm={6} md={8} lg={12} className="py-2">
                 <ScrollAnimation
                   animateIn="rollIn"
-                   animateOnce='true'
+                  animateOnce="true"
                   duration={1}
                   initiallyVisible={true}
                 >
