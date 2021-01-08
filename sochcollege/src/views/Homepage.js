@@ -48,7 +48,6 @@ class Homepage extends Component {
                     <br />
                     Leading Tomorrow
                   </h1>
-                  <h2>We believe in hard work and excellence .</h2>
                   <Link
                     to="contact"
                     spy={true}

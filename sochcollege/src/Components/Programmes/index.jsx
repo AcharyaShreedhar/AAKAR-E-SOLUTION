@@ -98,7 +98,7 @@ class Programme extends Component {
                 >
                   <Image
                     className="rounded"
-                    src={"/images/carreroptions.png"}
+                    src={"/images/careeroptions.png"}
                     alt=""
                     fluid
                   />

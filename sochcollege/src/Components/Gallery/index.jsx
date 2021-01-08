@@ -229,7 +229,7 @@ class Gallery extends Component {
                 >
                   <Image
                     className="rounded"
-                    src={"/images/canteen5.png"}
+                    src={"/images/sports2.JPG"}
                     alt=""
                     fluid
                   />
