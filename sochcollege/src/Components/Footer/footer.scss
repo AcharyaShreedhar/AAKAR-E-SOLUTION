@@ -1,6 +1,7 @@
 .footerSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   transition: all 0.5s;
   z-index: 997;
@@ -9,7 +10,7 @@
   background-color: lavender;
 
   .logo {
-   align-self: center;
+    align-self: center;
     padding: 5px 100px 5px 100px;
   }
   .copyRight {
