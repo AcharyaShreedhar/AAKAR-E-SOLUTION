@@ -98,7 +98,7 @@ class Programme extends Component {
                 >
                   <Image
                     className="rounded"
-                    src={"/images/carreroptions.png"}
+                    src={"/images/careeroptions.png"}
                     alt=""
                     fluid
                   />
@@ -154,7 +154,7 @@ class Programme extends Component {
                                 <td>CSC 101</td>
                                 <td>Introduction of IT</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/Introduction to Information Technology.pdf"
                                   download
                                 >
                                   <td>
@@ -167,7 +167,7 @@ class Programme extends Component {
                                 <td>CSC 102</td>
                                 <td>Programming in C</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/C Programming.pdf"
                                   download
                                 >
                                   <td>
@@ -180,7 +180,7 @@ class Programme extends Component {
                                 <td>STA-103</td>
                                 <td>Probability and Statistics</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/Statistics I.pdf"
                                   download
                                 >
                                   <td>
@@ -193,7 +193,7 @@ class Programme extends Component {
                                 <td>MTH 104</td>
                                 <td>Calculus and Analytical Geometry</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/Calculus and Analytical Geometry.pdf"
                                   download
                                 >
                                   <td>
@@ -206,7 +206,7 @@ class Programme extends Component {
                                 <td>PHY-105</td>
                                 <td>ELECTIVE : Physics I</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/Physics.pdf"
                                   download
                                 >
                                   <td>
@@ -214,38 +214,13 @@ class Programme extends Component {
                                   </td>
                                 </a>
                               </tr>
+                             
                               <tr>
                                 <td>6</td>
-                                <td>BIO-106</td>
-                                <td>ELECTIVE : Biology I</td>
-                                <a
-                                  href="/pdfs/Distributed Networking.pdf"
-                                  download
-                                >
-                                  <td>
-                                    <FontAwesomeIcon icon={faFileDownload} />
-                                  </td>
-                                </a>
-                              </tr>
-                              <tr>
-                                <td>7</td>
-                                <td>GEO 107</td>
-                                <td>ELECTIVE : Geology I</td>
-                                <a
-                                  href="/pdfs/Distributed Networking.pdf"
-                                  download
-                                >
-                                  <td>
-                                    <FontAwesomeIcon icon={faFileDownload} />
-                                  </td>
-                                </a>
-                              </tr>
-                              <tr>
-                                <td>8</td>
                                 <td>STA 108</td>
                                 <td>ELECTIVE : Statistics I</td>
                                 <a
-                                  href="/pdfs/Distributed Networking.pdf"
+                                  href="/pdfs/Statistics I.pdf"
                                   download
                                 >
                                   <td>

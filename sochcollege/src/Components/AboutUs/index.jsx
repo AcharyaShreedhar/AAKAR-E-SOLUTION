@@ -149,7 +149,7 @@ class AboutUs extends Component {
             </Row>
           </div>
         </ScrollAnimation>
-        <div className="d-flex counts mt-1">
+        {/* <div className="d-flex counts mt-1">
           <div class="container">
             <div class="row counters">
               <div class="col-lg-3 col-6 text-center">
@@ -170,13 +170,13 @@ class AboutUs extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="d-flex card pt-0 mt-1">
           <div className="sectiontitle">
             <strong>College's Infrastructure</strong>
           </div>
           <p className="text-left p-2">
-            The college has its own property spread over 2 ropanies of land and
+            The college has its own property spread over 5 ropanies of land and
             newly constructed building (Area 15000 Square Feet) with modern
             amenities with an added attraction of peaceful environment and
             greenery.
@@ -398,7 +398,7 @@ class AboutUs extends Component {
                         <Carousel.Item interval={1000}>
                           <div className="slideritem">
                             <Image
-                              src={"/images/sport1.jpg"}
+                              src={"/images/sports1.png"}
                               className="imageItem"
                               alt=""
                               fluid
@@ -408,7 +408,7 @@ class AboutUs extends Component {
                         <Carousel.Item interval={500}>
                           <div className="slideritem">
                             <Image
-                              src={"/images/sport2.jpg"}
+                              src={"/images/sports2.JPG"}
                               className="imageItem"
                               alt=""
                               fluid
@@ -418,7 +418,7 @@ class AboutUs extends Component {
                         <Carousel.Item>
                           <div className="slideritem">
                             <Image
-                              src={"/images/sport3.jpg"}
+                              src={"/images/sports3.JPG"}
                               className="imageItem"
                               alt=""
                               fluid
@@ -453,16 +453,6 @@ class AboutUs extends Component {
                           <div className="slideritem">
                             <Image
                               src={"/images/canteen1.jpg"}
-                              className="imageItem"
-                              alt=""
-                              fluid
-                            />
-                          </div>
-                        </Carousel.Item>
-                        <Carousel.Item interval={500}>
-                          <div className="slideritem">
-                            <Image
-                              src={"/images/canteen2.jpg"}
                               className="imageItem"
                               alt=""
                               fluid

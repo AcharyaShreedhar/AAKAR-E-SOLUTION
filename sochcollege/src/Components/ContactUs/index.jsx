@@ -195,12 +195,12 @@ class ContactUs extends Component {
         <div className="d-flex card mt-1">
           <div className="d-flex p-2">
             <p className="text-left">
-              <strong>Location and Direction of Soch College</strong>
+              <strong>Location</strong>
             </p>
           </div>
           <Image
-            className="rounded border"
-            src={"/images/sochmap.jpg"}
+            className="rounded border p-5"
+            src={"/images/sochmap.png"}
             alt=""
             fluid
           />
@@ -212,7 +212,7 @@ class ContactUs extends Component {
                 <h1 className="d-flex pb-2 border-bottom">Contact</h1>
                 <Form onSubmit={this.handleSubmit.bind(this)}>
                   <FormGroup controlId="formBasicName">
-                    <Label className="text-muted d-flex">Name</Label>
+                    <Label className="d-flex">Name</Label>
                     <Input
                       type="text"
                       name="name"
@@ -226,7 +226,7 @@ class ContactUs extends Component {
                     </div>
                   </FormGroup>
                   <FormGroup controlId="formBasicName">
-                    <Label className="text-muted d-flex">Phone Number *</Label>
+                    <Label className="d-flex">Phone Number *</Label>
                     <Input
                       type="text"
                       name="phoneNumber"
@@ -240,7 +240,7 @@ class ContactUs extends Component {
                     </div>
                   </FormGroup>
                   <FormGroup controlId="formBasicEmail">
-                    <Label className="text-muted d-flex">Email address *</Label>
+                    <Label className="d-flex">Email address *</Label>
                     <Input
                       type="email"
                       name="email"
@@ -254,7 +254,7 @@ class ContactUs extends Component {
                     </div>
                   </FormGroup>
                   <FormGroup controlId="formBasicMessage">
-                    <Label className="text-muted d-flex">Message</Label>
+                    <Label className="d-flex">Message</Label>
                     <Input
                       type="textarea"
                       name="message"
