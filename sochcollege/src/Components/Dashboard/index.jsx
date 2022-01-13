@@ -17,7 +17,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className="header fixed-top ">
+      <div className="header fixed-top">
         <Navbar className="nav-menu" expand="lg">
           <Navbar.Brand href="#home">
             <Row>
@@ -30,8 +30,14 @@ class Dashboard extends Component {
                 />
               </Col>
               <Col>
-                <h3 className="title"> SOCH COLLEGE</h3>
-                <h3 className="title">OF IT</h3>
+                <h5 className="title" align="center">
+                  {" "}
+                  SOCH COLLEGE
+                </h5>
+                <h5 className="title" align="center">
+                  {" "}
+                  OF IT
+                </h5>
               </Col>
             </Row>
           </Navbar.Brand>

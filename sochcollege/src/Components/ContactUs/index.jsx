@@ -285,7 +285,7 @@ class ContactUs extends Component {
                 <p className="text-left">Pokhara, NEPAL</p>
                 <p className="text-left">(Behind Nepal Telecom Office)</p>
 
-                <p className="text-left">Tel: +977-61540120/524096</p>
+                <p className="text-left">Tel: +977-61543120/574096</p>
                 <p className="text-left">E-mail: mail@sochcollege.edu.np</p>
               </Col>
             </Row>
