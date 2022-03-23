@@ -17,7 +17,12 @@ img {
   height: 100vh;
   z-index: 1000;
 }
-
+.meritmodal {
+  z-index: 2000;
+}
+.admissionmodal {
+  z-index: 1999;
+}
 .box {
   display: flex;
   flex-direction: row;
