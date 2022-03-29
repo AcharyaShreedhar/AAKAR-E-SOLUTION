@@ -69,7 +69,7 @@ function App() {
 }
 
 function App() {
-  const [showMeritList, setShowMeritList] = React.useState(true)
+  const [showMeritList, setShowMeritList] = React.useState(false)
 
   const [showAdmission, setShowAdmission] = React.useState(true)
   return (
