@@ -6,6 +6,46 @@ import { Modal, Button, Image } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 
+function WorkshopModal(props) {
+  return (
+    <>
+      <Modal
+        {...props}
+        size='xl'
+        aria-labelledby='contained-modal-title-vcenter'
+        dialogClassName='modal-90w'
+        centered
+      >
+        <Modal.Body>
+          <Image
+            src={'/images/Web Development Program.jpg'}
+            // style={{ width: "5rem" }}
+            alt='Web Development Workshop'
+            fluid
+          />
+          <p
+            style={{
+              fontSize: 20 + 'px',
+              textAlign: 'center',
+              fontWeight: 'bold',
+            }}
+          >
+            {' '}
+            All the students are informed that we are organizing one day
+            workshop on "Web Development" by collaborating with XDezo Academy on
+            Thursday, 28 April, 2022. Please fill up the registration form to
+            attend the program. Short Link:-
+            <a href='https://url.xdezo.com/infomax-soch-program'>
+              <u>https://url.xdezo.com/infomax-soch-program</u>
+            </a>{' '}
+            - Infomax College of IT & Management
+          </p>
+        </Modal.Body>
+      </Modal>
+    </>
+  )
+}
+
 function MeritListModal(props) {
   return (
     <>
@@ -69,11 +109,21 @@ function App() {
 }
 
 function App() {
+  const [showWorkshop, setShowWorkshop] = React.useState(true)
+
   const [showMeritList, setShowMeritList] = React.useState(false)
 
-  const [showAdmission, setShowAdmission] = React.useState(true)
+  const [showAdmission, setShowAdmission] = React.useState(false)
   return (
     <div className='App'>
+      <WorkshopModal
+        className='workshopmodal'
+        show={showWorkshop}
+        onHide={() => {
+          setShowWorkshop(false)
+          setShowAdmission(true)
+        }}
+      />
       <MeritListModal
         className='meritmodal'
         show={showMeritList}

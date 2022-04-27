@@ -17,6 +17,9 @@ img {
   height: 100vh;
   z-index: 1000;
 }
+.workshopmodal {
+  z-index: 2001;
+}
 .meritmodal {
   z-index: 2000;
 }
