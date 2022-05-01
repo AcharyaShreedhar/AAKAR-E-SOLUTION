@@ -109,11 +109,11 @@ function App() {
 }
 
 function App() {
-  const [showWorkshop, setShowWorkshop] = React.useState(true)
+  const [showWorkshop, setShowWorkshop] = React.useState(false)
 
   const [showMeritList, setShowMeritList] = React.useState(false)
 
-  const [showAdmission, setShowAdmission] = React.useState(false)
+  const [showAdmission, setShowAdmission] = React.useState(true)
   return (
     <div className='App'>
       <WorkshopModal
