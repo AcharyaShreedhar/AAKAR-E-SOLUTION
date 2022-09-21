@@ -81,7 +81,7 @@ function AdmissionModal(props) {
       >
         <Modal.Body>
           <Image
-            src={'/images/soch_college.jpg'}
+            src={'/images/admission.png'}
             // style={{ width: "5rem" }}
             alt='Soch College Admission'
             fluid
